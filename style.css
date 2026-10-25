@@ -1,0 +1,56 @@
+:root{--oranje:#e85d04;--oranje2:#c44d03;--wasoranje:#fff4ec;--nacht:#1c1c1e;--inkt:#1a1a1a;--inkt2:#3a3a3c;--grijs:#6b6b6b;--grond:#ffffff;--vlak:#f5f4f2;--lijn:#e7e4df;--groen:#16a34a}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;overflow-x:clip}
+body{margin:0;background:var(--grond);color:var(--inkt);font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;font-size:17px;line-height:1.7;-webkit-font-smoothing:antialiased}
+a{color:var(--oranje2);text-underline-offset:3px}
+a:hover{color:var(--inkt)}
+img{max-width:100%;height:auto;display:block}
+.streep{height:6px;background:linear-gradient(90deg,var(--oranje) 0 62%,var(--nacht) 62% 100%)}
+.raam{max-width:1120px;margin:0 auto;padding:0 16px;display:grid;grid-template-columns:240px minmax(0,1fr);gap:56px}
+.zij{padding:32px 0;border-right:1px solid var(--lijn);padding-right:24px}
+.zij .merk{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--inkt);font-weight:800;font-size:17px;line-height:1.2;margin-bottom:6px}
+.zij .merk img{width:54px;height:45px;object-fit:contain}
+.zij .onder{font-size:13px;color:var(--grijs);margin:0 0 24px}
+.zij h2{font-size:12px;text-transform:uppercase;letter-spacing:.1em;color:var(--grijs);margin:0 0 8px}
+.zij nav ol{list-style:none;padding:0;margin:0}
+.zij nav li{margin:0}
+.zij nav a{display:block;padding:9px 0 9px 12px;border-left:3px solid transparent;text-decoration:none;color:var(--inkt2);font-size:15px;line-height:1.35}
+.zij nav a:hover{color:var(--oranje2)}
+.zij nav a[aria-current]{border-left-color:var(--oranje);color:var(--inkt);font-weight:700}
+.stuk{padding:40px 0 24px;max-width:700px}
+.rubriek{font-size:13px;font-weight:700;color:var(--oranje2);text-transform:uppercase;letter-spacing:.1em;margin:0 0 10px}
+h1{font-size:clamp(29px,4.2vw,42px);line-height:1.12;letter-spacing:-.02em;margin:0 0 16px;text-wrap:balance}
+.lead{font-size:19px;color:var(--inkt2);margin:0 0 10px;border-left:4px solid var(--oranje);padding-left:16px}
+.meta{font-size:14px;color:var(--grijs);margin:12px 0 22px}
+h2{font-size:clamp(22px,2.8vw,27px);line-height:1.25;margin:42px 0 12px;letter-spacing:-.01em;text-wrap:balance}
+h2::before{content:"";display:block;width:36px;height:3px;background:var(--oranje);margin-bottom:12px}
+h3{font-size:18px;margin:24px 0 6px}
+p{margin:0 0 16px}
+ul,ol{padding-left:22px;margin:0 0 18px}
+li{margin:6px 0}
+figure{margin:28px 0}
+figure img{width:100%;border-radius:4px}
+figure.breed img{aspect-ratio:16/9;object-fit:cover}
+figcaption{font-size:14px;color:var(--grijs);margin-top:8px;padding-left:10px;border-left:2px solid var(--lijn)}
+.vraag{background:var(--vlak);border-radius:6px;padding:16px 18px;margin:22px 0}
+.vraag h3{margin-top:0}
+.vraag p:last-child{margin:0}
+.twee{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:18px 0 22px}
+.twee>div{border:1px solid var(--lijn);border-radius:6px;padding:14px 16px}
+.twee h3{margin-top:0;font-size:17px}
+.twee p:last-child,.twee ul:last-child{margin:0}
+.tabel{overflow-x:auto;margin:16px 0 22px;-webkit-overflow-scrolling:touch}
+table{width:100%;border-collapse:collapse;font-size:15px}
+th,td{text-align:left;padding:9px 10px;border-bottom:1px solid var(--lijn);vertical-align:top}
+th{border-bottom:2px solid var(--nacht);font-weight:700}
+.let{background:var(--wasoranje);padding:14px 18px;border-radius:6px;margin:24px 0}
+.let p:last-child{margin:0}
+.bronnen{margin-top:44px;padding-top:14px;border-top:1px dashed var(--lijn)}
+.bronnen h2::before{display:none}
+.bronnen h2{font-size:18px;margin-top:0}
+.bronnen li{font-size:14px;color:var(--grijs)}
+.voet{grid-column:1/-1;border-top:1px solid var(--lijn);padding:22px 0 32px;font-size:14px;color:var(--grijs)}
+.voet p{margin:0 0 6px;max-width:760px}
+.voet b{color:var(--inkt)}
+@media(max-width:860px){.raam{grid-template-columns:1fr;gap:0}.zij{border-right:0;border-bottom:1px solid var(--lijn);padding:18px 0 10px}.zij .onder{margin-bottom:12px}.zij nav ol{display:flex;flex-wrap:wrap;gap:4px 14px}.zij nav a{padding:6px 0;border-left:0;border-bottom:3px solid transparent}.zij nav a[aria-current]{border-bottom-color:var(--oranje)}.stuk{padding-top:26px}}
+@media(max-width:600px){body{font-size:16px}.lead{font-size:17px}.twee{grid-template-columns:1fr}}
